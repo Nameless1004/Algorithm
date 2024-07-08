@@ -2,7 +2,6 @@ import java.util.*;
 
 class Solution {
     public String solution(String X, String Y) {
-        int[] map = new int[10];
         List<Character> l = new ArrayList();
         String L = X.length() <= Y.length() ? X : Y;
         String R = L == X ? Y:X;
