@@ -28,11 +28,10 @@ class Solution {
     }
     
    public int getResult(String[][] places, int curI, ArrayList<ArrayList<Integer>> pos){
-                for(int index = 0; index < pos.size(); index++) {
+            for(int index = 0; index < pos.size(); index++) {
             int curX = pos.get(index).get(0);
             int curY = pos.get(index).get(1);
-            for(int next = 0; next < pos.size(); next++) {
-               if(next==index) continue;
+            for(int next = index + 1; next < pos.size(); next++) {
                 int nextX = pos.get(next).get(0);
                 int nextY = pos.get(next).get(1);
                 int dist = getDist(curX, nextX, curY, nextY);
